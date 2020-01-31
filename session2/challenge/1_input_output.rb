@@ -9,4 +9,10 @@
 
 def sum_difference_product
   # your code goes here
+  puts "Type 2 integers"
+  integers = gets.chomp.split(" ").map(&:to_i)
+  
+  puts integers[0] + integers[1]
+  puts integers[0] - integers[1]
+  puts integers[0] * integers[1]
 end

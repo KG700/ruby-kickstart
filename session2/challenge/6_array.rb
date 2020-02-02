@@ -14,3 +14,10 @@
 # prime_chars? ['ab', 'cd']       # => false
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
+
+def prime_chars?(strings)
+  string_length = strings.join.length
+  string_length < 2 ? prime = false : prime = true
+  (2..string_length - 1).each { |num| prime = false if string_length % num == 0}
+  prime
+end
